@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 
-sudo killall java
+sudo kill $(ps -ef | grep "java" | awk '{print $2}')
 exit 0
